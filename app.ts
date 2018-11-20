@@ -39,19 +39,19 @@ switch (true) {
     Hue.setColorAllHue.setColor('FF9900');
     break;
 
-  // cloudy
-  case (condition.indexOf('cloudy') !=-1):
-  case (condition.indexOf('fog') !=-1):
-    // white
-    Hue.setColorAllHue.setColor('FFFFFF');
-    break;
-
   // sunny
   case (condition.indexOf('sun') !=-1):
   case (condition.indexOf('clear') !=-1):
     // yellow
     Hue.setColorAllHue.setColor('FFDD00');
     break;
+
+  // cloudy
+    case (condition.indexOf('cloud') !=-1):
+    case (condition.indexOf('fog') !=-1):
+      // white
+      Hue.setColorAllHue.setColor('FFFFFF');
+      break;
 
   // default color if no match
   default:
